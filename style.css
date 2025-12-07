@@ -106,7 +106,7 @@ h2 {
 .project-card {
   padding: 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 18px rgba(79, 195, 247, 0.25);
   transition: 0.3s;

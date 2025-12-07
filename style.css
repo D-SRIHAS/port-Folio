@@ -6,11 +6,20 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body {
   background: #0f0f0f;
   color: #ffffff;
   line-height: 1.6;
 }
+  */
+
+body {
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  color: #fff;
+}
+
 
 /* HEADER */
 header {
@@ -120,3 +129,10 @@ footer {
   object-fit: cover;
   margin-bottom: 20px;
 }
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

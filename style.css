@@ -67,17 +67,19 @@ nav a:hover {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 12px 25px;
-  background: #00d084;
+  background: #4fc3f7;
   color: #000;
   border-radius: 25px;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #03b36b;
+  background: #0288d1;
+  color: #fff;
 }
+
 
 /* SECTIONS */
 section {
@@ -125,10 +127,11 @@ footer {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 4px solid #00d084;
+  border: 4px solid #4fc3f7;
   object-fit: cover;
   margin-bottom: 20px;
 }
+
 
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
@@ -153,16 +156,20 @@ footer {
 .social-links a {
   margin-right: 15px;
   font-size: 1.1rem;
-  color: #00d084;
-  text-decoration: none;
-  font-weight: 600;
-  border: 2px solid #00d084;
+  color: #4fc3f7;
+  border: 2px solid #4fc3f7;
   padding: 8px 15px;
   border-radius: 25px;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 .social-links a:hover {
-  background: #00d084;
+  background: #4fc3f7;
   color: #000;
+}
+
+
+.highlight {
+  color: #4fc3f7;
 }

@@ -3,38 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio - Donthagani Srihas</title>
+<title>Portfolio | Donthagani Srihas</title>
 
 <!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <!-- External CSS -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
+<!-- AOS Animation Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
 
-<!-- Particles.js CDN -->
+<!-- particles.js CDN -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1200,   // Animation speed
-    once: true        // Animation triggers only once
-  });
-</script>
 </head>
-
 
 <body>
 
-<!-- PARTICLES BACKGROUND -->
+<!-- Particle Background -->
 <div id="particles-js"></div>
 
 <!-- ============================= -->
-<!-- HEADER SECTION -->
+<!-- HEADER -->
 <!-- ============================= -->
 <header>
   <h2 class="logo">Donthagani Srihas</h2>
@@ -48,9 +41,8 @@
 <!-- ============================= -->
 <!-- HERO SECTION -->
 <!-- ============================= -->
-<section class="hero">
+<section class="hero" data-aos="fade-up">
 
-  <!-- Profile Image -->
   <img src="images/myphoto.jpg" alt="profile" class="profile-img">
 
   <h1>Hi, I'm <span class="typing"></span></h1>
@@ -62,30 +54,26 @@
 <!-- ============================= -->
 <!-- ABOUT SECTION -->
 <!-- ============================= -->
-<section id="about">
+<section id="about" data-aos="fade-up">
   <h2>About Me</h2>
   <p class="about-text">
-    I’m <strong>Donthagani Srihas</strong>, a passionate and driven Computer Science & Engineering student with a strong interest in 
-    Full-Stack Web Development and Artificial Intelligence. I enjoy building real-world projects that solve meaningful problems and 
-    continuously learning modern technologies to improve my skills.
+    I’m <strong>Donthagani Srihas</strong>, a passionate and driven Computer Science & Engineering student with a deep interest in
+    full-stack web development and AI. I love solving real-world problems by building clean and impactful technology solutions.
     <br><br>
-    Currently, I’m exploring advanced frontend development, backend APIs, cloud deployment, and machine learning concepts. I love 
-    working on projects that challenge me to think creatively and improve user experience.
-    <br><br>
-    My goal is to become a skilled developer who builds innovative solutions and contributes to impactful technology.
+    I enjoy working on challenging projects, improving UI/UX experiences, and continuously learning modern tools and frameworks.
+    My goal is to become a highly skilled developer and create meaningful innovations that positively impact society.
   </p>
 </section>
-
 
 <!-- ============================= -->
 <!-- PROJECTS SECTION -->
 <!-- ============================= -->
-<section id="projects">
+<section id="projects" data-aos="fade-up">
   <h2>Projects</h2>
 
   <div class="projects">
 
-    <div class="project-card">
+    <div class="project-card" data-aos="zoom-in">
       <h3>Project Title</h3>
       <p>Short description about the project and what technologies were used.</p>
       <div class="project-buttons">
@@ -94,7 +82,7 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" data-aos="zoom-in">
       <h3>Project Title</h3>
       <p>Short description about the project and what technologies were used.</p>
       <div class="project-buttons">
@@ -106,37 +94,28 @@
   </div>
 </section>
 
-
 <!-- ============================= -->
 <!-- CONTACT SECTION -->
 <!-- ============================= -->
-<section id="contact">
+<section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
   <p>Connect with me on:</p>
 
   <div class="social-icons">
 
-    <a href="https://github.com/D-SRIHAS" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/srihas-donthagani-1094b022b/" target="_blank">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="mailto:srihaschintu01@gmail.com" target="_blank">
-      <i class="fas fa-envelope"></i>
-    </a>
+    <a href="https://github.com/D-SRIHAS" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/srihas-donthagani-1094b022b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:srihaschintu01@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
 
   </div>
 </section>
-
-
 
 <footer>
   <p>© 2025 Donthagani Srihas. All Rights Reserved.</p>
 </footer>
 
+
+<!-- Typing Effect Script -->
 <script>
 const text = "Donthagani Srihas";  
 const typingElement = document.querySelector(".typing");
@@ -146,14 +125,17 @@ function typeEffect() {
   if (index < text.length) {
     typingElement.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeEffect, 120); // typing speed
+    setTimeout(typeEffect, 120);
   }
 }
-
 window.onload = typeEffect;
 </script>
 
-<!-- PARTICLES CONFIG -->
+<!-- Initialize AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init({duration: 1200, once: true});</script>
+
+<!-- Particles.js Config -->
 <script>
 particlesJS("particles-js", {
   "particles": {
@@ -163,12 +145,10 @@ particlesJS("particles-js", {
     "opacity": { "value": 0.5, "random": true },
     "size": { "value": 3, "random": true },
     "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
-    "move": { "enable": true, "speed": 2, "direction": "none", "random": true }
+    "move": { "enable": true, "speed": 2, "random": true }
   },
   "interactivity": {
-    "events": {
-      "onhover": { "enable": true, "mode": "grab" }
-    },
+    "events": { "onhover": { "enable": true, "mode": "grab" } },
     "modes": { "grab": { "distance": 200, "line_linked": { "opacity": 0.8 } } }
   },
   "retina_detect": true

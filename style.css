@@ -1,0 +1,113 @@
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  padding: 2rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #4fc3f7;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding-top: 5rem;
+  height: 70vh;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 12px 25px;
+  background: #00d084;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #03b36b;
+}
+
+/* SECTIONS */
+section {
+  padding: 4rem 5%;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-text {
+  max-width: 750px;
+}
+
+/* PROJECTS SECTION */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.project-card {
+  padding: 20px;
+  background: #161616;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #4fc3f7;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  margin-top: 3rem;
+}

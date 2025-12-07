@@ -43,7 +43,7 @@
   <!-- Profile Image -->
   <img src="images/myphoto.jpg" alt="profile" class="profile-img">
 
-  <h1>Hi, I'm <span class="highlight">Donthagani Srihas</span></h1>
+  <h1>Hi, I'm <span class="typing"></span></h1>
   <p>Frontend / Fullstack Developer | Programmer | Tech Enthusiast</p>
 
   <a href="#projects" class="btn">View My Work</a>
@@ -117,6 +117,22 @@
 <footer>
   <p>© 2025 Donthagani Srihas. All Rights Reserved.</p>
 </footer>
+
+<script>
+const text = "Donthagani Srihas";  
+const typingElement = document.querySelector(".typing");
+let index = 0;
+
+function typeEffect() {
+  if (index < text.length) {
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 120); // typing speed
+  }
+}
+
+window.onload = typeEffect;
+</script>
 
 <!-- PARTICLES CONFIG -->
 <script>

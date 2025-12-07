@@ -106,17 +106,19 @@ h2 {
 .project-card {
   padding: 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffffff, #d0e8ff, #9fd6ff);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: linear-gradient(135deg, #eef7ff, #d6ecff, #b3dbff);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 0 18px rgba(79, 195, 247, 0.25);
   transition: 0.3s;
-  color: #000;   /* dark text because background is light */
+  color: #09203f; /* dark navy for readability */
 }
+
 
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 25px rgba(79, 195, 247, 0.8);
 }
+
 
 
 
